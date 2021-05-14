@@ -209,13 +209,13 @@ h5 { font-size: 16px;}
     align-content: center;
 
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 #preview-shadow{
     background-color: var(--previewShadow);
     width: 300px;
-    height: 290px;
+    height: 400px;
     padding-left: 30px;
     padding-top: 30px;
 }
@@ -255,6 +255,35 @@ h5 { font-size: 16px;}
 #corner-bl{
     bottom: -5px;
     left: -5px;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.about-me{
+    padding-top: 0px;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--previewShadow);
+}
+
+#social_img{
+    width: 100%;
+}
+
+.social-links{
+    padding-top: 30px;
+    display: grid;
+    align-content: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
