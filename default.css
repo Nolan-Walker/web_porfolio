@@ -22,6 +22,10 @@ html, body{
     margin: 0;
 }
 
+body *{
+    transition:0.3s;
+}
+
 
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
@@ -100,6 +104,10 @@ h5 { font-size: 16px;}
     align-items: center;
     background-color: var(--mainColor);
     border-radius: 5px 5px 0 0;
+}
+
+#navigation a{
+    color: var(--mainText) ;
 }
 
 #navigation{
@@ -295,8 +303,9 @@ h5 { font-size: 16px;}
     -webkit-box-shadow: 7px -6px 21px 1px rgba(0,0,0,0.47); ; 
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: 7px -6px 21px 1px rgba(0,0,0,0.47);
-
 }
+
+
 
 .thumbnail{
     display: block;
@@ -313,11 +322,12 @@ h5 { font-size: 16px;}
 .post-title{
     color: black;
     margin: 0;
+    font-size: 14pt;
 }
 
 .post-intro{
     color: #4b5156;
-    font-size: 14px;
+    font-size: 12pt;
 }
 
 #contact-form{

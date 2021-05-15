@@ -15,9 +15,7 @@
     rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="default.css">
-    <link id="theme-style" rel="stylesheet" type="text/css" href="blue.css">
-    <link rel="stylesheet" type="text/css" href="">
-    <link rel="stylesheet" type="text/css" href="">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 
 </head>
 <body>
@@ -45,10 +43,10 @@
                    <img id="profile_pic" src="images/wedding.jpg">
                    <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
                    <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                    </div>
 
                    <p id="settings-note" >*Theme settings will be saved for<br>your next visit
@@ -215,7 +213,7 @@
                     <div class="post">
                         <img class="thumbnail" src="images/CNN/Screenshot 2021-05-14 110537.png">
                         <div class="post-preview">
-                            <h6 class="post-title">Tracking ADS-B Signals with DIY Antenna and Raspberry Pi</h6>
+                            <h6 class="post-title">Convolutional Neural Networks for Image Classification</h6>
                             <p class="post-intro">Designed a coaxial collinear antenna and reciever to track airplanes' Automatic Dependent 
                                 Surveillance-Broadcast (ADS-B) signals for a DIY airplane radar. The information was sent to PiAware using a RaspberryPi which
                             provided a live feed of airplane locations. Succesfully tracked an airplane from 320km away.</p>
@@ -243,7 +241,7 @@
         <div class="main-container"> 
             <h3 style="text-align: center;">Get in Touch</h3>
 
-            <form id="contact-form">
+            <form id="contact-form" action="mail.php" method="post">
                 <a name="contact"></a>
 
                 <label>Name</label>
@@ -262,6 +260,8 @@
             </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
