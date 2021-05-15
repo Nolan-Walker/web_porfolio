@@ -1,4 +1,5 @@
 <?php
+//enable error reporting
 ini_set( 'display_errors', 1);
 error_reporting( E_ALL );
 
@@ -8,6 +9,7 @@ $subject = $_POST['subject'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
+//validate input
 if(empty($name)||empty($email))
 {
     echo "Name and email are mandatory!";
@@ -21,5 +23,5 @@ $headers = "From: noreply@nolans-space.tech" . "\r\n";
 mail($to,$subject,$txt,$headers);
 
 //redirect
-header("Location:post.html");
+header("Location:formsubmitted.html");
 ?>
