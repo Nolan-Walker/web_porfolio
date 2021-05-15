@@ -15,6 +15,10 @@
     rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="blue.css">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="">
+
 </head>
 <body>
 
@@ -33,7 +37,7 @@
                    </div>
 
                    <ul id="navigation">
-                        <li><a href="#" >Contact</a></li>
+                        <li><a href="index.html#contact" >Contact</a></li>
                    </ul>
                </div>
             
@@ -83,7 +87,7 @@
                     <p>I have a passion for programming and automating tasks; I have
                         connected several "things" to the internet using Arduino's, blynk, Node-Red,
                         and Wi-Fi modules. I own a large collection of DIY electronics parts such
-                        as microcontrollers, IC's, sensors & actuators, SOC's, 
+                        as microcontrollers, ICs, sensors & actuators, SOCs, 
                         RF trancievers, software-defined radio's, and many other components. 
                     </p>
                     
@@ -107,13 +111,17 @@
                             <li>Antenna Design</li>
                             <li>Electronic System Design</li>
                             <li>Computer Networking</li>
-                            <li>Computer Vision & Machine Learning</li>
-                            <li>Communication Systems & Software-Defined Radio</li>
-                            <li>Digital Logic & Embedded Programming</li>
-                            <li>Digital Signal Processing & Signal Modulation</li>
+                            <li>Communication Systems </li>
+                            <li>Software-Defined Radio</li>
+                            <li>Digital Logic</li>
+                            <li>Embedded Programming</li>
+                            <li>Digital Signal Processing</li>
+                            <li>Signal Modulation</li>
                         </ul>
 
                         <ul>
+                            <li>Computer Vision</li>
+                            <li>Machine Learning</li>
                             <li>Python</li>
                             <li>Linux & Shell Scripting</li>
                             <li>C++</li>
@@ -130,7 +138,7 @@
 
                 <div class="social-links">
                     <img id="social_img" src="images/Tube.png">
-                    <img id="social_img" src="images/git.png">
+                    <img id="social_img" src="images/git2.png">
                     <h3>Find some of my work on Youtube & GitHub</h3>
                     <p><a target="_blank" href="https://www.youtube.com/channel/UCidlQksO2iDTl7UWROwKaAA" >YouTube@Nolan.Caissie</a>
                     <br>
@@ -147,13 +155,111 @@
 
     <section class="s1">
         <div class="main-container"> 
-            Portfolio
+            <h3 style="text-align: center;">Some of my past projects</h3>
+
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/Airplane_Project/COCO_ant-CUBICSDR-2.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Tracking ADS-B Signals with DIY Antenna & Raspberry Pi</h6>
+                            <p class="post-intro">Designed a coaxial collinear antenna and reciever to track airplanes' Automatic Dependent 
+                                Surveillance-Broadcast (ADS-B) signals for a DIY airplane radar. Succesfully tracked airplanes from over 320km away.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/Embedded-C/Screenshot 2021-05-14 102022.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">STM Microcontroller & I/O Interfacing with Embedded C</h6>
+                            <p class="post-intro">Designed embedded C program to measure potentiometer resistance and input signal frequency
+                                to an STM microcontroller, and then display the results on an emulated LCD screen 
+                                interfaced with the microcontroller.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/MP3_alarm/USB working.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">MP3 Alarm Clock</h6>
+                            <p class="post-intro">Designed electronics and programmed an STM microcontroller to take an MP3 file as input from a USB thumb drive
+                                and output the corresponding analog voltage signal to an operational-amplifier and produce music through a speaker.
+                                The STM microcontroller was also configured for volume control, LCD time display, and button presses to set the time
+                                and alarm.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/Security_shell/Screenshot 2021-05-14 104841.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/CNN/Screenshot 2021-05-14 110537.png">
+                        <div class="post-preview">
+                            <h6 class="post-title">Tracking ADS-B Signals with DIY Antenna and Raspberry Pi</h6>
+                            <p class="post-intro">Designed a coaxial collinear antenna and reciever to track airplanes' Automatic Dependent 
+                                Surveillance-Broadcast (ADS-B) signals for a DIY airplane radar. The information was sent to PiAware using a RaspberryPi which
+                            provided a live feed of airplane locations. Succesfully tracked an airplane from 320km away.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/Bridge/Bridge.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence. Some more text</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <section class="s1">
+    <section class="s2">
         <div class="main-container"> 
-            Contact
+            <h3 style="text-align: center;">Get in Touch</h3>
+
+            <form id="contact-form">
+                <a name="contact"></a>
+
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
 
