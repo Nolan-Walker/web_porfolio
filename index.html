@@ -56,12 +56,9 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do</h3>
-                            <p>I am a 4th year electrical & computer
-                                engineering student with a passion for technology.
-                                I am always in search of the next
+                            <p>I am always seeking the next
                                 challenging project or informative read to maintain a lifestyle of 
-                                continuous learning and add to my knowledge base.
-                                Besides spending time working on exciting engineering projects, 
+                                continuous learning. Besides working on exciting projects, 
                                 I love to get outside and ride my motorcycle, exercise, or play guitar.
                             </p>
                             <div id="corner-br" class="corner"></div>
@@ -96,20 +93,20 @@
                     <p>Experience connecting "things" to the internet (IoT) in a corporate environment; I recently
                         implemented an IoT gateway (or edge computer) using a Moxa UC-8112-MET and the
                         Node-Red programming environment to automate gas-well scheduling: 
-                        <a target="_blank" href="WT1_Report_nc.pdf">Download White Paper</a>
+                        <a target="_blank" href="Efficient Well-Scheduling & Automation.pdf">Download White Paper</a>
                     </p>
 
                     <div id="skills">
                         <ul>
                             <li>Automation</li>
                             <li>Antenna Design</li>
-                            <li>Electronic System Design</li>
+                            <li>System Design</li>
                             <li>Computer Networking</li>
-                            <li>Communication Systems </li>
-                            <li>Software-Defined Radio</li>
+                            <li>Communications </li>
+                            <li>SDR</li>
                             <li>Digital Logic</li>
                             <li>Embedded Programming</li>
-                            <li>Digital Signal Processing</li>
+                            <li>DSP</li>
                             <li>Signal Modulation</li>
                         </ul>
 
@@ -117,7 +114,7 @@
                             <li>Computer Vision</li>
                             <li>Machine Learning</li>
                             <li>Python</li>
-                            <li>Linux & Shell Scripting</li>
+                            <li>Linux Shell</li>
                             <li>C++</li>
                             <li>HTML/CSS</li>
                             <li>MATLAB</li>
@@ -127,7 +124,7 @@
                         </ul>    
 
                     </div>
-                    <p><a target="_blank" href="Spartan Controls Resume 2020.pdf">Download Resume</a> </p>
+                    <p><a target="_blank" href="Resume.pdf">Download Resume</a> </p>
                 </div>
 
                 <div class="social-links">
@@ -149,6 +146,41 @@
 
     <section class="s1">
         <div class="main-container"> 
+
+            <h3 style="text-align: center;">Current Project</h3>
+            <div class="current-post-wrapper">
+                <div class="current-post">
+                
+                    <div class="current-post-preview">
+                        
+                        <h4 class="current-post-title">Autonomous Body Temperature Tracking & Vaccine Passport Project</h4> 
+                        <br>
+                        <h6 class="current-post-title"> In the spirit of current events and a desire to play around with cool technology,
+                            I have come up with a design idea (using "IoT" of course)! </h5>
+                            
+                            <p class="current-post-intro">
+                            I am going to implement a medical grade MLX90614 non-contact body temperature sensor, 
+                            RFID tags (containing identification information and vaccination record), and a server database for storing this information. 
+                            I plan to use ultrasonic sensors to guide a person into the correct position for temperature measurement and an RFID module to read 
+                            tags containing the identification information and vaccination record; the idea is that once a temperature measurement has been 
+                            taken and is within the accepted range, the person will proceed to scan their RFID tag; once the RFID tag has been scanned and the information has been recorded 
+                            (temperature, identification, and vaccination record), this information will be sent to a server and stored in a database. From this point, "entry" (through a doorway or passage)
+                            will be gained if the requirements are met. 
+                            <br><br>
+                            This project has applications (but its mostly for fun!) to help secure entry to areas that may be at high-risk of Covid-19 infection or may be highly affected by the virus. 
+                            These places include elderly homes, large businesses/corporate environments, and airports.</p>
+                        
+                        
+                            <div class="video-container">
+                            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QH5IxBVP1Hk" title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                            </div>
+                    
+                    </div>
+                
+                </div>
+            </div>
+
             <h3 style="text-align: center;">Some of my past projects</h3>
 
             <div class="post-wrapper">
@@ -157,10 +189,10 @@
                     <div class="post">
                         <img class="thumbnail" src="images/Airplane_Project/COCO_ant-CUBICSDR-2.jpg">
                         <div class="post-preview">
-                            <h6 class="post-title">Tracking ADS-B Signals with DIY Antenna & Raspberry Pi</h6>
+                            <h6 class="post-title">Tracking ADS-B Signals with DIY Antenna, SDR & Raspberry Pi</h6>
                             <p class="post-intro">Designed a coaxial collinear antenna and reciever to track airplanes' Automatic Dependent 
                                 Surveillance-Broadcast (ADS-B) signals for a DIY airplane radar. Succesfully tracked airplanes from over 320km away.</p>
-                            <a href="post.html">Read More</a>
+                            <a href="airplanetrackingpost.html">Read Blog Entry</a>
                         </div>
                     </div>
                 </div>
@@ -171,10 +203,9 @@
                         <div class="post-preview">
                             <h6 class="post-title">STM Microcontroller & I/O Interfacing with Embedded C</h6>
                             <p class="post-intro">Designed embedded C program to measure potentiometer resistance and input signal frequency
-                                to an STM microcontroller, and then display the results on an emulated LCD screen 
-                                interfaced with the microcontroller.
+                                to an STM microcontroller, and then display the results on an emulated LCD screen.
                             </p>
-                            <a href="#">Read More</a>
+                            <a target="_blank" href="Embedded-C_Report.pdf">Read Project Report</a>
                         </div>
                     </div>
                 </div>
@@ -184,12 +215,10 @@
                         <img class="thumbnail" src="images/MP3_alarm/USB working.jpg">
                         <div class="post-preview">
                             <h6 class="post-title">MP3 Alarm Clock</h6>
-                            <p class="post-intro">Designed electronics and programmed an STM microcontroller to take an MP3 file as input from a USB thumb drive
-                                and output the corresponding analog voltage signal to an operational-amplifier and produce music through a speaker.
-                                The STM microcontroller was also configured for volume control, LCD time display, and button presses to set the time
-                                and alarm.
+                            <p class="post-intro">Designed alarm clock that plays MP3 files off of a USB thumb drive. This project consisted of 
+                                prototyping electronics, PCB design, 3D printing, and integration of the electronics with an STM microcontroller.
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="alarmprojectpost.html">Read Blog Entry</a>
                         </div>
                     </div>
                 </div>
@@ -198,9 +227,12 @@
                     <div class="post">
                         <img class="thumbnail" src="images/Security_shell/Screenshot 2021-05-14 104841.png">
                         <div class="post-preview">
-                            <h6 class="post-title">Post Title</h6>
-                            <p class="post-intro">This is a sentence. Some more text</p>
-                            <a href="#">Read More</a>
+                            <h6 class="post-title">Automated Domain Information Gathering</h6>
+                            <p class="post-intro">Implemented a Linux Shell Script that takes a domain name as input and automates
+                                information gathering tasks. This script is useful for security related incidents, such as responding
+                                to a compromised domain name.
+                            </p>
+                            <a target="_blank" href="Automated Info Gathering Script Output.pdf">See Script Usage/Output</a>
                         </div>
                     </div>
                 </div>
@@ -210,10 +242,10 @@
                         <img class="thumbnail" src="images/CNN/Screenshot 2021-05-14 110537.png">
                         <div class="post-preview">
                             <h6 class="post-title">Convolutional Neural Networks for Image Classification</h6>
-                            <p class="post-intro">Designed a coaxial collinear antenna and reciever to track airplanes' Automatic Dependent 
-                                Surveillance-Broadcast (ADS-B) signals for a DIY airplane radar. The information was sent to PiAware using a RaspberryPi which
-                            provided a live feed of airplane locations. Succesfully tracked an airplane from 320km away.</p>
-                            <a href="#">Read More</a>
+                            <p class="post-intro">The task of this assignment was to implement deep learning for image classification. The python programming language and the Pytorch library were used for creating a custom CNN
+                                to classify images from the MNIST dataset.
+                            </p>
+                            <a target="_blank" href="https://github.com/Nolan-Walker/Convolutional-Neural-Networks-for-Image-Classification/blob/master/Convolutional-Neural.ipynb">See Jupyter Notebook</a>
                         </div>
                     </div>
                 </div>
@@ -222,9 +254,13 @@
                     <div class="post">
                         <img class="thumbnail" src="images/Bridge/Bridge.jpg">
                         <div class="post-preview">
-                            <h6 class="post-title">Post Title</h6>
-                            <p class="post-intro">This is a sentence. Some more text</p>
-                            <a href="#">Read More</a>
+                            <h6 class="post-title">Autonomous Swing Bridge</h6>
+                            <p class="post-intro">This group project consisted of mechanical design, 3D printing, Arduino C,
+                                electronics prototyping/sensor integration, and lots of soldering! This bridge won the vote
+                                for 'best design' by EGBC members who attended our project demonstration.
+
+                            </p>
+                            <a target="_blank" href="https://youtube.com/playlist?list=PLqM5bz4H7e4uB2pYr34FQgZtFaUfUP-4u">View Video Playlist</a>
                         </div>
                     </div>
                 </div>

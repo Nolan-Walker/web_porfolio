@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tracking ADS-B</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+            
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+    <style>
+        h5 {text-align: center; color: var(--mainText);}
+        h3 {color: var(--mainText);}
+        h2 {color: var(--mainText);}
+        p {color: var(--secondaryText);}
+        form {color: var(--mainText);}
+    </style>
+
+    <style type="text/css">
+        .row {
+            display: flex;
+
+        }
+
+    </style>
+
+    <style type="text/css">
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+    </style>
+
+    <style type = "text/css">
+        #back-button {
+            width: 20em;
+            height: 5em;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid var(--borderColor);
+            padding: 15px;
+            border-radius: 5px;
+            background-color: var(--mainColor);
+            margin-bottom: 50px;
+
+}
+        
+        
+    </style>
+
+</head>
+<body>
+    <section class="s1">
+        <div class="nav-wrapper">
+
+            <a href="index.html">
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+            </a>
+
+            <ul id="navigation">
+                <li><a href="index.html#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="main-container">
+            <br>
+
+            <div class="img-container">
+                <img src="images/Airplane_Project/COCO_ant-CUBICSDR-2.jpg">
+            </div>
+
+            <h3>Tracking ADS-B Signals with DIY Antenna & Raspberry Pi </h3>
+
+            <h2>Equiptment Setup</h2>
+
+
+            <p>RG6U coaxial cable that included a datasheet was purchased through a local electronics supplier here in Calgary, Alberta. 
+                The prospect of finding coaxial cable that came with a data sheet was surprisingly difficult; the data sheet was a requirement 
+                in building a coaxial colinear antenna (COCO antenna).Due to the dielectric properties of coaxial cable, the velocity of propagation 
+                (often times called the velocity factor, or VF) is different in coaxial cable than it is in air; 
+                the velocity of propagation for ADSB signals in air is the speed of light, 
+                whereas in the coaxial cable purchase, the velocity of propagation is 78% the speed of light.
+            <br>
+            <br>
+            
+            <img id="profile_pic" src="images/Airplane_Project/RG6U_COAX-Figure-1.jpg">
+
+            <h5> Figure 1: RG6U Coaxial Cable with VF=0.78 </h5>
+
+            <p>A coaxial colinear antenna used for receiving ADSB signals, is build by cutting precise strips of coaxial cable which are equal to 1/2 the wavelength 
+                (typically these antennas are made with 4, 8, 12, or 16 separate 1/2 wavelength long coax). Due to the VF being different in the cable, '
+                the wavelength of the ADSB signal must be multiplied by this velocity factor, or velocity of propagation factor. The wavelength of an ADSB signal in air
+                is equal to approximately 275 mm; multiplying this by the velocity factor of 0.78 and dividing the result by 2, 
+                we get a half wavelength of approximately 107.4 mm.
+            <br>
+            <br>
+
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-4-Figure-2.jpg"> 
+
+            <h5>Figure 2: Four 1/2 Wavelength Strips of Coaxial Cable</h5>
+
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-8-Figure-3.jpg">
+
+            <h5>Figure 3: Eight 1/2 Wavelength Strips of Coaxial Cable</h5>
+
+            <p>To make precise measurements, a caliper was purchased and sections of wavelengths were cut (a millimetre or so smaller to account for increased length 
+                caused by attaching the coaxial strips). The first of two antennas was constructed using 4 sections of 
+                coaxial cable and the second was constructed using 8 sections of coaxial cable (see figures 2 and 3).
+            <br>
+            <br>
+        
+            <p>The coaxial lengths were put together by reversing the inner and outer conductors with strips of electrical tape in between them to ensure that they would 
+                not cause a short in the antenna (see figure 4).
+            <br>
+            <br>
+
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-Figure-4.jpg">
+
+            <h5>Figure 4: Connected 1/2 Wavelength Coaxial Strips</h5>
+
+            <p>After each connection was made, electrical tape was wound tight around the outside of the antenna to ensure there was solid insulation around the antenna and to provide 
+                a measure of structural strength. A resistor was placed between the inner and outer conductors at the top of the antenna so that a DMM could be used to perform 
+                continuity tests and confirm that the correct value of resistance was being measured (see figure 5). A twist-on female coaxial connector was added to provide 
+                connection to the rest of the circuit (see figure 6).
+            <br>
+            <br>
+
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-Figure-5.jpg">
+
+            <h5>Figure 5: 50 Ohm Resistor for Testing Purposes</h5>
+
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-4-Figure-6.jpg">
+
+            <h5>Figure 6: The 4 Section, 1/2 Wavelength COCO Antenna</h5>
+
+            <p>The two antennas were fully constructed and then testing using CubicSDR. 
+                An image of both antennas side-by-side, as well as the testing results, are shown in figures 7 and 8 respectively.
+            <br>
+            <br>
+            
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-Figure-7.jpg">
+
+            <h5>Figure 7: The 8- and 4- Section COCO's</h5>
+
+            <img id="profile_pic" src="images/Airplane_Project/COCO_ant-CUBICSDR-Figure-8.jpg">
+
+            <h5>Figure 8: CubicSDR Testing </h5>
+
+            <p>The 8-section coco antenna was confirmed to work better when tested in CubicSDR and thus, the antenna was taped to a window and a Raspberry Pi 4 with an LCD screen 
+            was connected to the SDR dongle; the dongle used a series of adapters (SMA to Coax and vice-versa) to connect an ADSB filter made by FlightAware and a Nooelec wideband 
+            Amplifier (see figure 9). While taped to the window, the antenna was able to catch a plane at a distance of 134.2 km, as shown in figure 10.
+            
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="column">
+                    <img id="profile-pic" src="images/Airplane_Project/COCO_ant-PIAWARE-LCD-Figure-9.jpg">
+                </div>            
+                <div class="column">
+                    <img id="profile-pic" src="images/Airplane_Project/COCO_ant-PIAWARE-LCD-2-Figure-9.jpg">
+                </div>
+            </div>
+
+            <h5>Figure 9: Testing the PiAware Software, Antenna, Filter, and Amplifier</h5>
+
+            <div>
+                <img src="images/Airplane_Project/Distance-134.2km-Figure-10.jpg">
+            </div>
+            
+            <h5>Figure 10: Airplane Tracked at 134.2 km</h5>
+
+            <p>A junction box with a clear front cover, PVC electrical conduit, brackets, seals, an end cap for the conduit, PVC cement, and a mounting bracket were purchased with the intent of building a proper weatherproof 
+                outdoor ADSB radar system. Unfortunately, the junction box ended up being too small to fit the Raspberry Pi with the LCD screen attached, and time was running out due to my engineering course load. 
+                In the meantime, the system components were placed into a Tupperware container and sealed which was sealed for weatherproofing; the 8-section antenna was placed inside the PVC conduit and the end cap was placed on top; 
+                a conduit bracket was placed on the outside of the PVC conduit and several pieces of duct-tape were stuck to each other (adhesive sides together) to create a strong piece of material; screws were then placed through the tape to 
+                mount the system on the patio railing of my home. The resulting setup is shown in figure 11. 
+            <br>
+            <br>
+            
+            <img id="profile_pic" src="images/Airplane_Project/ADSB-Setup-Figure-11.jpg">
+
+            <h5>Figure 11: The Semi-Final Project Setup</h5>
+
+            </p>
+            
+
+            <h2>Results</h2>
+
+            <p>Once the setup was placed outside, the ADSB radar system began picking up many more airplanes. This is shown in Figure 12, where distances of 263.7, 246.3, and 225.5 kms were seen at the same time.
+            
+            <br>
+            <br>
+
+            <div>
+                <img src="images/Airplane_Project/Distance-ANT-OUTSIDE-Multiple-Figure-12.jpg">
+            </div>
+            <h5>Figure 12: Airplanes Tracked at 263.7, 246.3, and 225.5 kms</h5>
+
+            <p>Several airplanes were located farther away from this; in figure 13, an image of an airplane tracked at 272.5 km is shown.
+            
+            <br>
+            <br>
+
+            <div>
+                <img src="images/Airplane_Project/Distance-ANT-OUTSIDE-272.5km(1)-Figure-13.jpg">
+            </div>
+
+            <h5>Figure 13: Image of flight JZA574 </h5>
+
+            <p>Some airplanes were detected over 320km away. Although I was unable to view them live, flightaware stored a record and coverage graph which can be shown in figure 14.
+            
+            <br>
+            <br>
+            
+            <div>
+                <img src="images/Airplane_Project/FlightAware-Coverage-Figure-20.png">
+            </div>
+
+            </p>
+
+            <br>
+            <form>
+                <input type="button" id="back-button" value="Go Back!" onclick="history.back()">
+            </form>
+            <br>
+            <br>
+            <br>
+    </section>
+
+
+	</div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
