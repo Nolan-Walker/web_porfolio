@@ -10,32 +10,70 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="default.css">
-	
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+
+
+    <style>
+        h5 {text-align: center; color: var(--mainText);}
+        h3 {color: var(--mainText);}
+        h2 {color: var(--mainText);}
+        p {color: var(--secondaryText);}
+        form {color: var(--mainText);}
+    </style>
+
+    <style type = "text/css">
+        #back-button {
+            width: 20em;
+            height: 5em;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid var(--borderColor);
+            padding: 15px;
+            border-radius: 5px;
+            background-color: var(--mainColor);
+            margin-bottom: 50px;
+            -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+            -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+            box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+
+    }
+    </style>
+
 </head>
-<body>
-    <div class="intro-wrapper">
-        <div class="nav-wrapper">
-            <div class="dots-wrapper">
-                 <div id="dot-1" class="browser-dot"></div>
-                 <div id="dot-2" class="browser-dot"></div>
-                 <div id="dot-3" class="browser-dot"></div>
+
+<section class="s1"></section>
+    <body style="background-color: var(--mainColor);">
+        
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+
+                    <ul id="navigation">
+                        <li><a href="index.html#contact" >Contact</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+
+        <section class="s2">
+            <div class="main-container" >
+                    <h3 style="text-align: center;" >Your email was sent! Thank you for contacting me.</h3>
+                    
+                        <form>
+                            <input type="button" id="back-button" value="Go Back!" onclick="history.back()">
+                        </form>
+                    
             </div>
+        </section>
 
-            <ul id="navigation">
-                <li><a href="index.html#contact" >Contact</a></li>
-            </ul>
-        </div>
-    </div>    
+        <script type="text/javascript" src="script.js"></script>
 
-    <div class="main-container" >
-            <h3>Your email was sent! Thank you for contacting me.</h3>
-            <form>
-                <input type="button">
-                <form>
-                    <input type="button" value="Go Back!" onclick="history.back()">
-                </form>
-            </form>
-    </div>
-
-</body>
+    </body>
+</section>
 </html>
